@@ -1,3 +1,8 @@
+// Copyright (c) 2014 MakeDeck LLC
+// Copyright (c) 2013 Electric Imp
+// This file is licensed under the MIT License
+// http://opensource.org/licenses/MIT
+
 humidity <- "";
 temperature <- "";
 batt <- "";
