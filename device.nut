@@ -1,3 +1,8 @@
+// Copyright (c) 2014 MakeDeck LLC
+// Copyright (c) 2013 Electric Imp
+// This file is licensed under the MIT License
+// http://opensource.org/licenses/MIT
+
 vbat_sns        <- hardware.pinA;   // Battery Voltage Sense (ADC)
 vbat_sns.configure(ANALOG_IN);
 vbat_sns_en     <- hardware.pinD;
