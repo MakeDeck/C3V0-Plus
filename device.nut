@@ -87,7 +87,7 @@ sensor.reset();
 function chkSensor() {
     //imp.wakeup(10, chkSensor);
     humidity <- sensor.readRH();
-    temperature <- sensor.readTemp()-3;
+    temperature <- sensor.readTemp();
     server.log(format("Temperature: %0.1fF & Humidity: %0.1f", temperature, humidity) + "%");
     
 }
@@ -100,6 +100,6 @@ agent.send("data", data);
 imp.setpowersave(true);
 
 imp.onidle(function() {
-    server.expectonlinein(6);
-    imp.deepsleepfor(5);
+    server.expectonlinein(32);
+    imp.deepsleepfor(30);
 });
